@@ -440,8 +440,7 @@ a {
     padding: 0;
     float: left;
     display: flex;
-    :
-  display: -webkit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     /* Safari 6.1+ */
@@ -966,39 +965,36 @@ a {
     }
 
   .header .section-container .button-container {
-    background: red;
     min-height: 7em;
     margin: 20px auto;
     max-width: 960px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    /* Safari 6.1+ */
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    /* Safari 6.1+ */
-    -ms-flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-justify-content: center;
     /* Safari 6.1+ */
-    -ms-flex-line-pack: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    /* Safari 6.1+ */
+    -ms-flex-direction: row;
     -webkit-box-align: center;
     align-items: center;
     -webkit-align-items: center;
-    -ms-flex-align: center; 
+    -ms-flex-align: center;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
-    /* .header .section-container .button-container .item {
-      display: block;
-    } */
+  .header .section-container .button-container .item {
+    padding: 20px;
+  }
 
-
+  @media only screen and (max-width: 1200px) {
+    .header .section-container .button-container {
+      display: none;
+    }
+  }
 
   .header .mobile {
     display: block;
@@ -1012,10 +1008,13 @@ a {
     flex-direction: column;
     /* Safari 6.1+ */
     -ms-flex-direction: column;
-    position: relative; }
-    @media only screen and (min-width: 1225px) {
+    position: relative; 
+  }
+    @media only screen and (min-width: 1200px) {
       .header .mobile {
-        display: none; } }
+        display: none; 
+      } 
+    }
     .header .mobile img {
       display: block;
       width: 279px;
@@ -1023,11 +1022,15 @@ a {
       margin: 0 auto; }
       @media only screen and (min-width: 768px) {
         .header .mobile img {
-          display: none; } }
+          display: none; 
+        } 
+      }
     .header .mobile .btn__git {
       margin-left: calc(50% - 143px);
       margin-right: calc(50% - 143px);
-      margin-bottom: 130px; }
+      margin-bottom: 10px; 
+      text-align: center;
+    }
     .header .mobile:before {
       content: '';
       position: absolute;
