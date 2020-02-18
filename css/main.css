@@ -842,7 +842,20 @@ a {
     color: #FFFFFF;
     font-size: 15px;
     position: relative;
-    top: -36px; }
+    top: -36px; 
+    margin: 0px 10px;
+  }
+    @media only screen and (max-width: 768px) {
+      .footer .contact {
+        display: none;
+      } 
+    }
+    @media only screen and (min-width: 768px) {
+      .footer .mobile {
+        display: none;
+      } 
+    }
+      
     .footer .mail img {
       width: 50px;
       height: 40px;
