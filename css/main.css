@@ -43,7 +43,7 @@ a {
 
 .btn__git {
   background: #F57342;
-  padding: 19px 82px;
+  padding: 19px 62px;
   font-size: 16px;
   color: #FFFFFF;
   border-radius: 10px; }
@@ -967,7 +967,7 @@ a {
   .header .section-container .button-container {
     min-height: 7em;
     margin: 20px auto;
-    max-width: 960px;
+    /* max-width: 960px; */
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1257,7 +1257,7 @@ p {
     max-width: 980px; } }
 @media only screen and (min-width: 1225px) {
   .section-container {
-    max-width: 1180px; } }
+    max-width: 1280px; } }
 
 
 
