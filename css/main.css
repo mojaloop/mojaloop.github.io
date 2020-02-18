@@ -43,10 +43,12 @@ a {
 
 .btn__git {
   background: #F57342;
-  padding: 19px 82px;
+  padding: 19px 22px;
   font-size: 16px;
   color: #FFFFFF;
-  border-radius: 10px; }
+  border-radius: 10px; 
+  margin: 0px 20px;
+}
 .btn__inside {
   border: 1px solid #005A83;
   padding: 10px 30px;
@@ -842,7 +844,20 @@ a {
     color: #FFFFFF;
     font-size: 15px;
     position: relative;
-    top: -36px; }
+    top: -36px; 
+    margin: 0px 10px;
+  }
+    @media only screen and (max-width: 768px) {
+      .footer .contact {
+        display: none;
+      } 
+    }
+    @media only screen and (min-width: 768px) {
+      .footer .mobile {
+        display: none;
+      } 
+    }
+      
     .footer .mail img {
       width: 50px;
       height: 40px;
@@ -967,7 +982,7 @@ a {
   .header .section-container .button-container {
     min-height: 7em;
     margin: 20px auto;
-    max-width: 960px;
+    /* max-width: 960px; */
     display: flex;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1010,7 +1025,7 @@ a {
     -ms-flex-direction: column;
     position: relative; 
   }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1201px) {
       .header .mobile {
         display: none; 
       } 
@@ -1026,8 +1041,8 @@ a {
         } 
       }
     .header .mobile .btn__git {
-      margin-left: calc(50% - 143px);
-      margin-right: calc(50% - 143px);
+      margin-left: calc(40% - 143px);
+      margin-right: calc(40% - 143px);
       margin-bottom: 10px; 
       text-align: center;
     }
@@ -1257,7 +1272,7 @@ p {
     max-width: 980px; } }
 @media only screen and (min-width: 1225px) {
   .section-container {
-    max-width: 1180px; } }
+    max-width: 1280px; } }
 
 
 
