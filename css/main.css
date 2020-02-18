@@ -43,7 +43,7 @@ a {
 
 .btn__git {
   background: #F57342;
-  padding: 19px 62px;
+  padding: 19px 22px;
   font-size: 16px;
   color: #FFFFFF;
   border-radius: 10px; }
@@ -1010,7 +1010,7 @@ a {
     -ms-flex-direction: column;
     position: relative; 
   }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1201px) {
       .header .mobile {
         display: none; 
       } 
@@ -1026,8 +1026,8 @@ a {
         } 
       }
     .header .mobile .btn__git {
-      margin-left: calc(50% - 143px);
-      margin-right: calc(50% - 143px);
+      margin-left: calc(40% - 143px);
+      margin-right: calc(40% - 143px);
       margin-bottom: 10px; 
       text-align: center;
     }
